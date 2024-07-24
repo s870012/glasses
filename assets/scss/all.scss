@@ -1,0 +1,16 @@
+@import "/assets/scss/layout/reset";
+@import "/assets/scss/layout/variable";
+@import "/assets/scss/layout/base";
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+@import "/assets/scss/pages/product";
+@import "/assets/scss/layout/pagenation";
+@import "/assets/scss/pages/location";
+@import "/assets/scss/pages/location-detail";
+@import "/assets/scss/pages/question";
+@import "/assets/scss/layout/blog-nav";
+@import "/assets/scss/pages/blog";
+@import "/assets/scss/pages/blog-article";

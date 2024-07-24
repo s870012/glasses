@@ -1,0 +1,236 @@
+//banner
+.home-banner{
+  background-image: url("/assets/images/home-header.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .home-banner-box{
+    height: 787px;
+    .sec-slogan{
+      font-size: var(--text-xl);
+    }
+    .slogan{
+      font-size: var(--text-xxxl);
+      font-weight: var(--weight-b);
+    }
+    .buy{
+      color: var(--color-white);
+      background-color: var(--color-secondary);
+      font-size: var(--text-m);
+    }
+  }
+}
+@media (max-width:767px) {
+  .home-banner{
+    background-image: url("/assets/images/home-header-sm.png");
+    padding: 0 24px;
+  }
+}
+@media (max-width:576px) {
+  .home-banner{
+    .home-banner-box{
+      .sec-slogan{
+        font-size: var(--text-l);
+      }
+      .slogan{
+        font-size: var(--text-xl);
+      }
+    }
+  }
+}
+@media (max-width:375px){
+  .home-banner{
+    padding: 0;
+    .home-banner-box{
+      height: 396px;
+      .sec-slogan{
+        font-size: var(--text-s);
+      }
+      .slogan{
+        font-size: var(--text-l);
+      }
+    } 
+  }
+}
+//promote
+.home-promote{
+  background-color: var(--color-thirdly);
+  .promote-card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    h3{
+      font-size: var(--text-l);
+      font-weight: var(--weight-b);
+    }
+    p{
+      color: var(--color-black);
+      font-size: var(--text-s);
+    }
+  }
+}
+@media (max-width:767px){
+  .home-promote{
+    padding: 0 24px;
+    .promote-card{
+      margin-bottom: 24px;
+    }
+    .col-3{
+      width: 50%;
+    }
+    .flex-w{
+      flex-wrap: wrap;
+    }
+  }
+}
+@media (max-width:375px){
+  .home-promote{
+    padding: 0;
+    .col-3{
+      width: 100%;
+    }
+  }
+}
+//classic
+@media(max-width:996px){
+  .title{
+    font-size: var(--text-xl);
+  }
+}
+@media (max-width:767px){
+  .home-classic{
+    padding: 0 24px;
+    .col-4{
+      width: 51%;
+      .title{
+        font-size: var(--text-xxl);
+        word-break: break-all;
+      }
+    }
+    .flex-w{
+      flex-wrap: wrap;
+    }
+    .classic-card{
+      margin-bottom: 24px;
+    }
+  }
+}
+@media (max-width:576px){
+  .home-classic{
+    padding: 0;
+    .col-4{
+      width: 100%;
+    }
+  }
+}
+//disign
+.home-design{
+  background-image: url("/assets/images/index-bg.png");
+  .design-item{
+    background-color: var(--color-white);
+  }
+}
+@media(max-width:767px){
+  .home-design{
+    background-image: url("/assets/images/index-bg-sm.png");
+    padding: 0 24px;
+    .col-6{
+      width: 100%;
+    }
+    .design-card{
+      margin-bottom: 24px;
+    }
+    .flex-w{
+      flex-wrap: wrap;
+    }
+  }
+}
+@media (max-width:375px){
+  .home-design{
+    background-image: url("/assets/images/index-bg-md.png");
+    padding: 0;
+  }
+}
+//recommend
+.recommend-card{
+  border-radius: 4px;
+  border: 1px solid var(--color-black-20);
+  box-shadow: 0 2px 6px var(--color-black-10);
+  --color-primary:var(--color-black);
+  .home-card-date{
+      color: var(--color-black-30);
+  }
+}
+@media (max-width:767px){
+  .home-recommend{
+    padding: 0 24px;
+    .flex-w{
+      flex-wrap: wrap;
+    }
+    .col-3{
+      width: 50%;
+    }
+    .recommend-card{
+      margin-bottom: 24px;
+    }
+  }
+}
+@media (max-width:375px){
+  .home-recommend{
+    padding: 0;
+    .col-3{
+      width: 100%;
+    }
+  }
+}
+//home-feedback
+.home-feedback{
+  background-color: var(--color-thirdly);
+  .table-box{
+    --color-primary:var(--color-black);
+    .input{
+      width: 100%;
+    }
+  }
+  .submit{
+    font-size: var(--text-s);
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: 0;
+    cursor: pointer;
+    &:hover{
+      background-color: var(--color-primary);
+    }
+  }
+}
+@media(max-width:767px){
+  .home-feedback{
+    padding: 0 24px;
+  }
+  .col-6{
+    width: 83.3333%;
+  }
+  .pt-32 > .col-6{
+    width: 50%;
+  }
+}
+@media (max-width:375px){
+  .home-feedback{
+    padding: 0;
+    .col-6{
+      width: 100%;
+    }
+    .pt-32 > .col-6{
+      width: 100%;
+    }
+  }
+}
+@media(max-width:375px){
+  .py-80{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .title{
+    font-size: var(--text-l);
+  }
+}

@@ -1,0 +1,23 @@
+//question
+.question{
+    --color-primary:var(--color-black);
+    .q-subtitle{
+        font-size: var(--text-l);
+        font-weight: var(--weight-b);
+        padding-bottom: 24px;
+        padding-top: 32px;
+    }
+    .questions{
+        font-size: var(--text-m);
+        font-weight: var(--weight-b);
+        margin-bottom: 8px;
+    }
+}
+    
+@media (max-width:767px){
+    .question{
+        .col-8{
+            width: 100%;
+        }
+    }
+}

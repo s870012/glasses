@@ -1,0 +1,37 @@
+.blog-nav{
+    background-color: var(--color-primary);
+    .blog-menu{
+        color: var(--color-white);
+        font-size: var(--text-m);
+        font-weight: var(--weight-b);
+    }
+    .search-btn{
+        background-image: url("/assets/images/search_16dp_000000_FILL0_wght400_GRAD0_opsz20.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        display: none;
+    }
+    .search-open{
+        cursor: pointer;
+    }
+    .search-close{
+        display: none;
+    }
+    .search-ctrl:checked + .search-icon .search-open{
+        display: none;
+    }
+    .search-ctrl:checked + .search-icon .search-close{
+        display: block;
+        cursor: pointer;
+    }
+    .search-ctrl:checked ~ .search-btn{
+        display: block;
+        border: 0;
+    }
+}
+@media (max-width:576px){
+    .blog-nav{
+        display: none;
+    }
+}
